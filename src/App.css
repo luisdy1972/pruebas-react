@@ -1,0 +1,21 @@
+.contenedor {
+  background-color: azure;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  flex-direction: column;
+  height: fit-content;
+  padding: 10px;
+}
+
+.cardTitulo {
+  color: green;
+  text-align: center;
+}
+
+.CadTexto {
+  color: blue;
+}
