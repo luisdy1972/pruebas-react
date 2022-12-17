@@ -1,0 +1,28 @@
+h1 {
+    color: white;
+    text-align: start;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.nav-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    background-color: rgb(94, 120, 236);
+}
+
+.menu-servicios {
+    display: flex;
+    gap: 0px 3rem;
+    list-style: none;
+    margin-right: 3rem;
+
+}
+
+.item-lista {
+    min-width: 3rem;
+    font-size: 1.3rem;
+    color: white;
+}

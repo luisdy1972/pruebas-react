@@ -1,5 +1,5 @@
 import React from "react"
-
+import "../hojas-de-estilos/Card.css"
 function Card() {
 	return (
 		// <div className="contenedor">
@@ -15,22 +15,24 @@ function Card() {
 		// 		<p className="CadTexto">IPS</p>
 		// 	</a>
 		// </div>
-		<div className="card contenedor m-3">
+
+		<div className="card-body">
 			<img
 				src={require("../img/uc.png")}
-				className="card-img-top"
-				alt="algo"
+				className="imagen-card"
+				alt="Logo de la empresa"
 			></img>
-			<div className="card-body">
-				<h5 className="card-title">Card title</h5>
-				<p className="card-text">
-					Some quick example text to build on the card title and make
-					up the bulk of the card's content.
-				</p>
-				<a href="http://localhost:3000" className="btn btn-primary">
-					Go somewhere
-				</a>
-			</div>
+			<h5 className="card-title">Uroclinica de cordoba</h5>
+			<p className="card-text">
+				Uroclinica de Córdoba es una clínica prestadora de servicios
+				médicos especializados en Urología, contamos con un excelente
+				equipo medico de gran experiencia en la resolución de patologías
+				urológicas, gracias a la aplicación de medicina de alta
+				complejidad soportada con tecnología de punta.
+			</p>
+			<a href="http://localhost:3000" className="enlace-website">
+				Website
+			</a>
 		</div>
 	)
 }
