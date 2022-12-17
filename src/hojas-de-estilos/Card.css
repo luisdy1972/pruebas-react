@@ -23,8 +23,15 @@
     text-align: center;
 }
 
+.card-cargo {
+    color: blue;
+}
+
 .card-text {
     margin: 1rem 0rem;
 }
 
-.enlace-website {}
+.enlace-website {
+    text-decoration: none;
+    color: green;
+}
