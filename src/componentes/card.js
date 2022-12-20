@@ -2,20 +2,6 @@ import React from "react"
 import "../hojas-de-estilos/Card.css"
 function Card() {
 	return (
-		// <div className="contenedor">
-		// 	<a href="http://localhost:3000/" className="enlace">
-		// 		<img
-		// 			className="cardImagen"
-		// 			src={require("../img/uc.png")}
-		// 			alt="Simbolo"
-		// 		/>
-		// 	</a>
-		// 	<h2 className="cardTitulo">Uroclinica de Córdoba</h2>
-		// 	<a href="http://localhost:3000/" className="enlace">
-		// 		<p className="CadTexto">IPS</p>
-		// 	</a>
-		// </div>
-
 		<div className="card-body">
 			<img
 				src={require("../img/uc.png")}
