@@ -4,13 +4,12 @@
     padding: 10px;
     margin: 20px;
     background-color: azure;
-    border: 1px solid;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 10px 15px 20px rgb(107, 107, 107)
+    box-shadow: 5px 5px 10px rgb(107, 107, 107)
 }
 
 .imagen-card {

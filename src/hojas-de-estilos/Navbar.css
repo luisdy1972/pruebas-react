@@ -11,6 +11,7 @@ h1 {
     justify-content: space-between;
     height: 3rem;
     background-color: rgb(94, 120, 236);
+    box-shadow: 1px 1px 10px rgb(107, 107, 107)
 }
 
 .menu-servicios {
