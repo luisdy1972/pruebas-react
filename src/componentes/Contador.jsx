@@ -1,18 +1,19 @@
 import React from "react"
-import "../hojas-de-estilos/Card.css"
 import "../hojas-de-estilos/Contador.css"
-function Contador() {
+import BotonContador from "./BotonContador"
+function Contador(props) {
 	return (
 		<div className="card-body">
 			<h2 className="card-title">Componente contador</h2>
-			<div className="display-contador">0</div>
+			<div id="contenedor" className="display-contador">
+				{props.display}
+			</div>
 			<div className="keyboart-contador">
-				<button className="boton-contador" onClick={`suma`}>
-					Clik
-				</button>
-				<button className="boton-contador" onClick={"restar"}>
-					Reinicar
-				</button>
+				<BotonContador
+					texto="Sumar"
+					botonSuma={true}
+					evento={props.evento}
+				></BotonContador>
 			</div>
 		</div>
 	)
