@@ -14,6 +14,11 @@ function Contador(props) {
 					botonSuma={true}
 					evento={props.evento}
 				></BotonContador>
+				<BotonContador
+					texto="Restart"
+					botonSuma={false}
+					evento={props.evento}
+				></BotonContador>
 			</div>
 		</div>
 	)

@@ -6,7 +6,7 @@ import Card from "./componentes/Card"
 import Contador from "./componentes/Contador"
 
 function App() {
-	const [display, EnviarDisplay] = useState(0)
+	let [display, EnviarDisplay] = useState(0)
 
 	function Evento() {
 		return EnviarDisplay(display + 1)
