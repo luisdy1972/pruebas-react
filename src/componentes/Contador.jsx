@@ -12,12 +12,12 @@ function Contador(props) {
 				<BotonContador
 					texto="Sumar"
 					botonSuma={true}
-					evento={props.evento}
+					evento={props.eventoSuma}
 				></BotonContador>
 				<BotonContador
 					texto="Restart"
 					botonSuma={false}
-					evento={props.evento}
+					evento={props.eventoRestart}
 				></BotonContador>
 			</div>
 		</div>
