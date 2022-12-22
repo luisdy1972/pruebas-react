@@ -1,9 +1,9 @@
 import React from "react"
 import "../hojas-de-estilos/Navbar.css"
 
-function Navbar(props) {
+function Navbar() {
 	return (
-		<nav>{props.children}
+		<nav>
 			<div className="nav-contenedor">
 				<span className="navbar-brand">
 					<h1>Uroclinica de Cordoba</h1>

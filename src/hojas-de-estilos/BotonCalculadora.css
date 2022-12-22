@@ -1,0 +1,45 @@
+.boton-calculadora {
+    border-radius: 5px;
+    border: 0px;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(94, 120, 236);
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.boton-calculadora:hover {
+    cursor: pointer;
+    background-color: rgb(216, 216, 250);
+    color: blue
+}
+
+.boton-calculadora:active {
+    background-color: green;
+    color: white;
+
+}
+
+
+.boton-operador {
+    border: 0px;
+    border-radius: 5px;
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color: rgb(153, 169, 245);
+    color: white;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.boton-operador:hover {
+    cursor: pointer;
+    background-color: rgb(216, 216, 250);
+    color: blue
+}
+
+.boton-operador:active {
+    background-color: green;
+    color: white;
+}

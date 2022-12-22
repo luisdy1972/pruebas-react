@@ -5,9 +5,7 @@ function Contador(props) {
 	return (
 		<div className="card-body">
 			<h2 className="card-title">Componente contador</h2>
-			<div id="contenedor" className="display-contador">
-				{props.display}
-			</div>
+			<div className="display-contador">{props.display}</div>
 			<div className="keyboart-contador">
 				<BotonContador
 					texto="Sumar"
