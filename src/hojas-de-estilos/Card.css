@@ -5,9 +5,6 @@
     margin: 20px;
     background-color: azure;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     box-shadow: 5px 5px 10px rgb(107, 107, 107)
 }
 
