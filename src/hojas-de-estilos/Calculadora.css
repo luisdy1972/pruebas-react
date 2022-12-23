@@ -1,6 +1,8 @@
-.display-calculadora {
-    text-align: right;
-    max-width: 80%;
+.pantalla-calculadora {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 10rem;
     min-height: 2.5rem;
     border: 0px;
     box-shadow: 0px 5px;

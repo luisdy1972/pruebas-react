@@ -7,10 +7,10 @@ import Contador from "./componentes/Contador"
 import Calculadora from "./componentes/Calculadora"
 
 function App() {
-	let [display, EnviarDisplay] = useState(0)
+	let [displayContador, EnviarDisplay] = useState(0)
 
 	function EventoSuma() {
-		return EnviarDisplay(display + 1)
+		return EnviarDisplay(displayContador + 1)
 	}
 	function EventoRestart() {
 		return EnviarDisplay(0)
@@ -28,7 +28,7 @@ function App() {
 				></Card>
 				<div>
 					<Contador
-						display={display}
+						displayContador={displayContador}
 						eventoSuma={EventoSuma}
 						eventoRestart={EventoRestart}
 					/>

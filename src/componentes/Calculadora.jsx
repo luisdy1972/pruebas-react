@@ -1,30 +1,80 @@
 import React from "react"
 import "../hojas-de-estilos/Calculadora.css"
+import PantallaCalculadora from "./PantallaCalculadora"
 import BotonCalculadora from "./BotonCalculadora"
-function Calculadora(props) {
+import BotonBorrar from "./BotonBorrar"
+import { useState } from "react"
+function Calculadora() {
+	const [input, enviarInput] = useState("")
+	const agregarInput = (valor) => {
+		enviarInput(input + valor)
+	}
+	const BorrarInput = () => {
+		enviarInput("")
+	}
+
 	return (
 		<div className="card-body">
 			<h2 className="card-title">Calculadora</h2>
-			<input className="display-calculadora"></input>
+			<PantallaCalculadora input={input} />
 			<div className="teclado-callculadora">
 				<div className="filla-calculadora">
-					<BotonCalculadora>1</BotonCalculadora>
-					<BotonCalculadora>2</BotonCalculadora>
-					<BotonCalculadora>3</BotonCalculadora>
-					<BotonCalculadora>-</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						1
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						2
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						3
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						-
+					</BotonCalculadora>
 				</div>
 				<div className="filla-calculadora">
-					<BotonCalculadora>4</BotonCalculadora>
-					<BotonCalculadora>5</BotonCalculadora>
-					<BotonCalculadora>6</BotonCalculadora>
-					<BotonCalculadora>+</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						4
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						5
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						6
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						+
+					</BotonCalculadora>
 				</div>
 				<div className="filla-calculadora">
-					<BotonCalculadora>7</BotonCalculadora>
-					<BotonCalculadora>8</BotonCalculadora>
-					<BotonCalculadora>9</BotonCalculadora>
-					<BotonCalculadora>*</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						7
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						8
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						9
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						*
+					</BotonCalculadora>
 				</div>
+				<div className="filla-calculadora">
+					<BotonCalculadora eventoClic={agregarInput}>
+						=
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						0
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						.
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						/
+					</BotonCalculadora>
+				</div>
+				<BotonBorrar eventoClicLimpiar={BorrarInput} />
 			</div>
 		</div>
 	)

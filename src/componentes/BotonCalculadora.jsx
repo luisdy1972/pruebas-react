@@ -1,15 +1,25 @@
 import React from "react"
 import "../hojas-de-estilos/BotonCalculadora.css"
-function BotonCalculadora(props) {
-	let clases = ["boton-calculadora", "boton-operador"]
-	let propiedad = props.children.toString()
+function BotonCalculadora({ children, eventoClic }) {
 	let claseDelBoton
 
-	if (propiedad == "+" || propiedad == "-" || propiedad == "*") {
-		claseDelBoton = clases[1]
-	} else claseDelBoton = clases[0]
+	if (
+		children === "+" ||
+		children === "-" ||
+		children === "*" ||
+		children === "/"
+	) {
+		claseDelBoton = "boton-operador"
+	} else claseDelBoton = "boton-calculadora"
 
-	return <button className={`${claseDelBoton}`}>{props.children}</button>
+	return (
+		<button
+			className={`${claseDelBoton}`}
+			onClick={() => eventoClic(children)}
+		>
+			{children}
+		</button>
+	)
 }
 
 export default BotonCalculadora
