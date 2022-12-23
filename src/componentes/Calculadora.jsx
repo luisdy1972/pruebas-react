@@ -4,6 +4,7 @@ import PantallaCalculadora from "./PantallaCalculadora"
 import BotonCalculadora from "./BotonCalculadora"
 import BotonBorrar from "./BotonBorrar"
 import { useState } from "react"
+import { evaluate } from "mathjs"
 function Calculadora() {
 	const [input, enviarInput] = useState("")
 	const agregarInput = (valor) => {
@@ -12,9 +13,18 @@ function Calculadora() {
 	const BorrarInput = () => {
 		enviarInput("")
 	}
+	const calcularResultado = () => {
+		if (input || input === "Infinity") {
+			enviarInput(evaluate(input))
+			console.log(enviarInput)
+		} else {
+			enviarInput("")
+			console.log(enviarInput)
+		}
+	}
 
 	return (
-		<div className="card-body">
+		<div>
 			<h2 className="card-title">Calculadora</h2>
 			<PantallaCalculadora input={input} />
 			<div className="teclado-callculadora">
@@ -61,7 +71,7 @@ function Calculadora() {
 					</BotonCalculadora>
 				</div>
 				<div className="filla-calculadora">
-					<BotonCalculadora eventoClic={agregarInput}>
+					<BotonCalculadora eventoClic={calcularResultado}>
 						=
 					</BotonCalculadora>
 					<BotonCalculadora eventoClic={agregarInput}>
@@ -74,7 +84,15 @@ function Calculadora() {
 						/
 					</BotonCalculadora>
 				</div>
-				<BotonBorrar eventoClicLimpiar={BorrarInput} />
+				<div className="filla-calculadora">
+					<BotonCalculadora eventoClic={agregarInput}>
+						{"("}
+					</BotonCalculadora>
+					<BotonCalculadora eventoClic={agregarInput}>
+						{")"}
+					</BotonCalculadora>
+					<BotonBorrar eventoClicLimpiar={BorrarInput} />
+				</div>
 			</div>
 		</div>
 	)

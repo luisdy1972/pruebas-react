@@ -4,6 +4,8 @@ function BotonCalculadora({ children, eventoClic }) {
 	let claseDelBoton
 
 	if (
+		children === "(" ||
+		children === ")" ||
 		children === "+" ||
 		children === "-" ||
 		children === "*" ||

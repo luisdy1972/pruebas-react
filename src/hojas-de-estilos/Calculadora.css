@@ -15,12 +15,12 @@
 
 .teclado-callculadora {
     display: flex;
-    flex: 1 1;
     gap: 0.5rem;
     flex-direction: column;
 }
 
 .filla-calculadora {
     display: flex;
+    justify-content: center;
     gap: 0.5rem;
 }

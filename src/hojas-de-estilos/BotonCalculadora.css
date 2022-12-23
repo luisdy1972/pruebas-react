@@ -16,7 +16,7 @@
 }
 
 .boton-calculadora:active {
-    background-color: rgb(94, 120, 236);
+    background-color: blue;
     color: white;
 
 }

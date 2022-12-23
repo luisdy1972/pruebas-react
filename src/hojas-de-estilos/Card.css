@@ -8,6 +8,11 @@
     box-shadow: 5px 5px 10px rgb(107, 107, 107)
 }
 
+.card-contenido {
+    display: flex;
+    flex-direction: column;
+}
+
 .imagen-card {
     margin: 0.2rem;
     height: max-content;
@@ -21,6 +26,7 @@
 }
 
 .card-cargo {
+    text-align: center;
     color: blue;
 }
 
@@ -31,6 +37,7 @@
 }
 
 .enlace-website {
+    text-align: center;
     text-decoration: none;
     color: green;
 }

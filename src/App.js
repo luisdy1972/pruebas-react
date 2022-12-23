@@ -20,22 +20,35 @@ function App() {
 		<div className="App">
 			<Navbar></Navbar>
 			<div className="Feed">
-				<Card
-					nombre="Luis Ayala"
-					cargo="Auxiliar de sistema"
-					presentacion='"Los técnicos laboral como Auxiliares de Sistemas Informáticos operan equipos de cómputo, monitorean la operación de sistemas de computación y redes, coordinan su uso y producen reportes de operación."'
-					link="https://jw.org"
-				></Card>
-				<div>
+				<Card>
+					<div className="card-contenido">
+						<img
+							src={require("./img/uc.png")}
+							className="imagen-card"
+							alt="Logo de la empresa"
+						></img>
+						<h5 className="card-title">{"Luis Ayala"}</h5>
+						<h6 className="card-cargo">{"Auxiliar de Sistema"}</h6>
+						<p className="card-text">
+							{
+								"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem possimus tempore natus reprehenderit iusto consequatur accusantium neque enim doloribus maiores accusamus qui nobis corporis, nulla vero cumque at quis maxime?"
+							}
+						</p>
+						<div className="enlace-website">
+							<a href={"/"}>Website</a>
+						</div>
+					</div>
+				</Card>
+				<Card>
 					<Contador
 						displayContador={displayContador}
 						eventoSuma={EventoSuma}
 						eventoRestart={EventoRestart}
 					/>
-				</div>
-				<div>
+				</Card>
+				<Card>
 					<Calculadora />
-				</div>
+				</Card>
 			</div>
 		</div>
 	)
