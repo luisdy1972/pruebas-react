@@ -17,7 +17,7 @@ function App() {
 	}
 
 	return (
-		<div className="App">
+		<div>
 			<Navbar></Navbar>
 			<div className="Feed">
 				<Card>
@@ -31,11 +31,11 @@ function App() {
 						<h6 className="card-cargo">{"Auxiliar de Sistema"}</h6>
 						<p className="card-text">
 							{
-								"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem possimus tempore natus reprehenderit iusto consequatur accusantium neque enim doloribus maiores accusamus qui nobis corporis, nulla vero cumque at quis maxime?"
+								"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem possimus tempore natus reprehenderit iusto consequatur accusantium neque enim doloribus maiores accusamus qui nobis corporis, nulla vero cumque at quis maxime."
 							}
 						</p>
 						<div className="enlace-website">
-							<a href={"/"}>Website</a>
+							<a href={"/"}>{"Website"}</a>
 						</div>
 					</div>
 				</Card>
