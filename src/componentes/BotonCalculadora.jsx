@@ -2,7 +2,6 @@ import React from "react"
 import "../hojas-de-estilos/BotonCalculadora.css"
 function BotonCalculadora({ children, eventoClic }) {
 	let claseDelBoton
-
 	if (
 		children === "(" ||
 		children === ")" ||
@@ -12,6 +11,9 @@ function BotonCalculadora({ children, eventoClic }) {
 		children === "/"
 	) {
 		claseDelBoton = "boton-operador"
+	}
+	if (children === "=") {
+		claseDelBoton = "boton-calculadora igual"
 	} else claseDelBoton = "boton-calculadora"
 
 	return (

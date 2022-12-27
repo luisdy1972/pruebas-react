@@ -1,10 +1,10 @@
 import React from "react"
-import "../hojas-de-estilos/Calculadora.css"
 import PantallaCalculadora from "./PantallaCalculadora"
 import BotonCalculadora from "./BotonCalculadora"
 import BotonBorrar from "./BotonBorrar"
 import { useState } from "react"
 import { evaluate } from "mathjs"
+import "../hojas-de-estilos/Calculadora.css"
 function Calculadora() {
 	const [input, enviarInput] = useState("")
 	const agregarInput = (valor) => {

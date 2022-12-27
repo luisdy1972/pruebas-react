@@ -5,6 +5,7 @@ import Navbar from "./componentes/Navbar"
 import Card from "./componentes/Card"
 import Contador from "./componentes/Contador"
 import Calculadora from "./componentes/Calculadora"
+import FormTareas from "./componentes/FormTareas"
 
 function App() {
 	let [displayContador, EnviarDisplay] = useState(0)
@@ -48,6 +49,9 @@ function App() {
 				</Card>
 				<Card>
 					<Calculadora />
+				</Card>
+				<Card>
+					<FormTareas></FormTareas>
 				</Card>
 			</div>
 		</div>
