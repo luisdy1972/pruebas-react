@@ -1,3 +1,10 @@
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contenedorForm {
     margin-top: 1rem;
     display: flex;
@@ -39,6 +46,9 @@
 
 .feedTareas {
     background-color: blue;
-    min-width: 90%;
-    min-height: 90%;
+    margin: 1rem 0 0 0;
+    width: 90%;
+    min-height: 20rem;
+    background-color: rgba(0, 0, 255, 0.171);
+    border-radius: 5px;
 }

@@ -1,0 +1,32 @@
+.contenedor-tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarea {
+    margin: 0.5rem;
+
+}
+
+.boton-checklist {
+    text-align: center;
+    margin: 0.5rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+}
+
+.boton-checklist:hover {
+    cursor: pointer;
+    background-color: rgb(216, 216, 250);
+    color: blue
+}
+
+.boton-checklist:active {
+    background-color: green;
+    color: white;
+}
