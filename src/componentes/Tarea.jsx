@@ -1,11 +1,11 @@
 import React from "react"
 import "../hojas-de-estilos/Tarea.css"
 
-function Tarea({ texto, boton }) {
+function Tarea({ texto, estado }) {
 	return (
 		<div className="contenedor-tarea">
-			<div className="tarea">{texto}</div>
-			<div className="boton-checklist">{boton}</div>
+			<div className={estado || "tareaPendiente"}>{texto}</div>
+			<div className="boton-checklist">✔</div>
 		</div>
 	)
 }

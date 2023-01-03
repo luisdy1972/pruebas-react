@@ -4,13 +4,30 @@
     align-items: center;
 }
 
-.tarea {
+.tareaPendiente {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(205, 228, 248);
     margin: 0.5rem;
+}
+
+.tareaOk {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(205, 228, 248);
+    margin: 0.5rem;
+    text-decoration: line-through;
 
 }
 
 .boton-checklist {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0.5rem;
     min-height: 2rem;
     min-width: 2rem;
