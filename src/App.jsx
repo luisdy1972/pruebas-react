@@ -1,11 +1,18 @@
 import React from "react"
 import { useState } from "react"
-import "./App.css"
+
+// componenetes
 import Navbar from "./componentes/Navbar"
 import Card from "./componentes/Card"
 import Contador from "./componentes/Contador"
 import Calculadora from "./componentes/Calculadora"
 import ListadoTareas from "./componentes/ListadoTareas"
+import InputAgregarTarea from "./componentes/InputAgregarTarea"
+import Tarea from "./componentes/Tarea"
+import TaskList from "./componentes/TaskList"
+
+// estilos
+import "./App.css"
 
 function App() {
 	let [displayContador, EnviarDisplay] = useState(0)
@@ -51,7 +58,14 @@ function App() {
 					<Calculadora />
 				</Card>
 				<Card>
-					<ListadoTareas />
+					<h2 className="card-title">Check List</h2>
+					<InputAgregarTarea />
+					<ListadoTareas>
+						<Tarea texto="Hola"></Tarea>
+					</ListadoTareas>
+				</Card>
+				<Card>
+					<TaskList></TaskList>
 				</Card>
 			</div>
 		</div>

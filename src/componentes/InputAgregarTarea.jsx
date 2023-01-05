@@ -1,5 +1,5 @@
 import React from "react"
-function InputAgregarTarea() {
+function InputAgregarTarea(props) {
 	return (
 		<form className="contenedorForm">
 			<input
@@ -7,7 +7,9 @@ function InputAgregarTarea() {
 				type="text"
 				placeholder="Agrega una Tarea"
 			/>
-			<input className="botonAgregarTareas" type="button" value="+" />
+			<button className="botonAgregarTareas" type="button">
+				Ok
+			</button>
 		</form>
 	)
 }
